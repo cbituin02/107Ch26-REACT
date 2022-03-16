@@ -8,6 +8,14 @@
     box-shadow: 5px 5px rgb(223, 223, 223);
 }
 
-.product label {
+.product .price .product {
     display: block;
+}
+
+.product h2 {
+    color: black;
+}
+
+.product h3 {
+    text-decoration: underline;
 }

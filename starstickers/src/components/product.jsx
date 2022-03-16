@@ -1,14 +1,14 @@
 import './product.css';
 import QuantityPicker from './quantityPicker';
 
-const Product = () => {
+const Product = (props) => {
     return (<div className='product'>
             <img src="https://picsum.photos/200/300" alt="product img"></img>
-            <h2>Title</h2>
-            <label>$Price</label>
-            <label>$Total</label>
+            <h2> {props.title} </h2>
+            <h3 className='price'> ${props.price} </h3>
+            <h4 className='stock'> {props.stock} left </h4>
             <QuantityPicker></QuantityPicker>
-            <button>Add</button>
+            <button className="btn btn-outline-success btn-sm">Add</button>
             </div>);
 }
 
