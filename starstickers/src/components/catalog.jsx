@@ -23,10 +23,10 @@ const Catalog = () => {
                 <h1>This is our amazing catalog!</h1>
                 <h2>We have {products.length} products!!</h2>
                 {products.map(
-                    (prod) => (<Product key={prod._id} title={prod.title} price={prod.price} stock={prod.stock}/>)
+                    (prod) => (<Product key={prod._id} data={prod}/>)
                     )
                 }
             </div>);
 }
 
-export default Catalog;
+export default Catalog; 
